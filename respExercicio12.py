@@ -10,17 +10,17 @@ class Desconto(ABC):
 
 class DescontoEstudante(Desconto):
     def calcular(self, valor):
-        return valor * 0.5   # 50% de desconto
+        return valor * 0.9
 
 
 class DescontoFuncionario(Desconto):
     def calcular(self, valor):
-        return valor * 0.7   # 30% de desconto
+        return valor * 0.85
 
 
 class DescontoVIP(Desconto):
     def calcular(self, valor):
-        return valor * 0.2   # 80% de desconto
+        return valor * 0.8   # 80% de desconto
 
 
 class CalculadorDesconto:
